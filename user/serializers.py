@@ -31,4 +31,4 @@ class PostCrudSerializer(serializers.ModelSerializer):
        
     class Meta:
         model = models.PostCrud
-        fields = "__all__"
+        fields = ["title", "text"]
