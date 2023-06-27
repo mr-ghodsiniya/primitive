@@ -16,7 +16,7 @@
 
 * [Git](https://git-scm.com/doc) , Version Control System. ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-* [Celey](https://docs.celeryq.dev/en/stable/) , Distributed Task Queue. ![Celery](https://img.shields.io/badge/celery-%230C7BDC.svg?style=for-the-badge&logo=celery&logoColor=white)
+* [Celery](https://docs.celeryq.dev/en/stable/) , Distributed Task Queue. ![Celery](https://img.shields.io/badge/celery-%230C7BDC.svg?style=for-the-badge&logo=celery&logoColor=white)
 
 * [Redis](https://redis.io/docs/) , Cache Database and message broker. ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
