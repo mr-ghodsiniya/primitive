@@ -18,7 +18,10 @@ con = Redis(host="localhost", port=6381, db=0, charset="utf-8", decode_responses
 
 
 class UserLogin(APIView):
-
+    """
+    Clients can use this APIView to receive an OTP for login/register.
+    """
+    
     def post(self, request, *args, **kwargs):
         serializer = serializers.UserLoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -32,6 +35,10 @@ class UserLogin(APIView):
         
         
 class UserVerify(APIView):
+    """
+    No matter clients are going to login or register, they can call this api
+    to verify their OTPs and receive access & refresh token for further uses.
+    """
     
     def post(self, request, *args, **kwargs):
         serializer = serializers.UserVeifySerializer(data=request.data)
