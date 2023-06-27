@@ -45,7 +45,7 @@ To test api, you need to use postman app **or** thunder client extension on vsco
 
 1. **clone the project**  
    ```  
-   git clone 
+   git clone git@github.com:mr-ghodsiniya/primitive.git
    ```  
 
 2. **rename .sample.env to .env and fill the variables**.  
