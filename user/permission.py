@@ -7,4 +7,3 @@ class IsOwnerOrReadeOnly(BasePermission):
     def has_object_permission(self, request, view, obj):
         if request.method == "PUT" or "PATCH" or "DELETE":
             return request.user.is_staff or obj.owner == request.user
-            # return request.user.is_staff or obj.user == request.user.user_name
