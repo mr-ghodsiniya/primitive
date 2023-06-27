@@ -162,7 +162,7 @@ send a get request to (http://127.0.0.1:8000/user/get-post/3/) <br/>
 3 = id of your post that create in Create API.
 
 
-# Patch or Update  
+# Update  
 send a patch request to (http://127.0.0.1:8000/user/update-post/3/) <br/> 
 including "text" or "title" or both of them in it's body, <br/>
 and including access token in Headers like below:  
