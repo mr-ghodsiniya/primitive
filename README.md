@@ -1,7 +1,7 @@
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=34&duration=3000&color=ADBAC7&center=false&vCenter=true&repeat=true&width=700&lines=Primitive+👋)](https://git.io/typing-svg)
 
 * This is a personal project that will be **upgraded in the future** also I didn't choose a suitable name for it.
-* currently users can **Sign up/in** and do **CRUD** operations for their posts.
+* Currently, users can **Sign up/in** and do **CRUD** operations for their posts.
 
 
 # 💻 Technologies used
@@ -39,22 +39,22 @@ You must install Docker to run **Redis and PostgreSQL** container on it.
 
 * **install [Postman](https://www.postman.com/)(recommended)  _or_ [Thunder Client](https://www.thunderclient.com)**  
 
-To test API, you need to use postman app **or** thunder client extension on vscode  
+To test API, you need to use postman app **or** thunder client extension on VsCode.
 
 * **Postman** <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
 
   * [install postman on Linux](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux)
   * [install postman on Windows](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-windows)
   * [install postman on Mac](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-mac)
+<br/>
 
   > use this [Guide](https://learning.postman.com/docs/sending-requests/requests/) on how to send request via **postman**. 
 
-<br/>
-
-  **Thunder Client** <br/>
-  **note**: you won't need this, if you've installed Postman  
+* **Thunder Client** <br/>
+  **note**: you won't need this, if you've installed Postman.
        
-  Launch VS Code Extensions tab (Ctrl+Shift+X), search for _Thunder Client_ and install it.
+  * Launch VsCode Extensions tab (Ctrl+Shift+X), search for _Thunder Client_ and install it.
+<br/>
 
   > use this [Guide](https://developers.refinitiv.com/en/article-catalog/article/how-to-test-http-rest-api-easily-with-visual-studio-code---thund) on how to send request via **thunder client**.
 
