@@ -61,7 +61,9 @@ To test API, you need to use postman app <br/>
 You can test APIs inside of project with the help of Google and localhost.
    ```
    http://127.0.0.1:8000/swagger/
-   or
+   ```
+   **or**
+   ```
    http://127.0.0.1:8000/redoc/
    ```
 
@@ -133,20 +135,20 @@ it's request would be Responsed by an access and refresh token for further usage
 
 
 # Login
-send a post request to (https://localhost:8000/user/login/) <br/>
+send a post request to (http://127.0.0.1:8000/user/login/) <br/>
 including "phone_number" in it's body.  
 you will receive an sms containig OTP code asap. <br/>
 (you would see it in the celery logs if you are not using an SMS provider as explained in step2)
 
 
 # Verify  
-send a post request to (https://localhost:8000/user/verify/) <br/>
+send a post request to (http://127.0.0.1:8000/user/verify/) <br/>
 including "phone_number" and "otp" in it's body.  
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=34&duration=3400&color=ADBAC7&center=false&vCenter=true&repeat=true&width=700&lines=you+will+Responded+by+an+access+and+refresh+token;if+you+provide+correct+credentials+👥️;with+access+token+you+can+do+CRUD+operations+🤝🏻)](https://git.io/typing-svg)
 
 
 # Create
-send a post request to (https://localhost:8000/user/create-post/) <br/>
+send a post request to (http://127.0.0.1:8000/user/create-post/) <br/>
 including "text" and "title" in it's body, <br/>
 and including access token in Headers like below:  
 ```
@@ -156,12 +158,12 @@ and including access token in Headers like below:
 
 
 # Retrieve  
-send a get request to (https://localhost:8000/user/user/get-post/3/) <br/>
+send a get request to (http://127.0.0.1:8000/user/get-post/3/) <br/>
 3 = id of your post that create in Create API.
 
 
 # Patch or Update  
-send a patch request to (https://localhost:8000/user/update-post/3/) <br/> 
+send a patch request to (http://127.0.0.1:8000/user/update-post/3/) <br/> 
 including "text" or "title" or both of them in it's body, <br/>
 and including access token in Headers like below:  
 ```
@@ -172,7 +174,7 @@ and including access token in Headers like below:
 
 
 # Delete
-send a delete request to (https://localhost:8000/user/delete-post/3/) <br/>
+send a delete request to (http://127.0.0.1:8000/user/delete-post/3/) <br/>
 including access token in Headers like below:
 ```
 # key: Authorization
