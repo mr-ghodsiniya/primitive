@@ -28,27 +28,31 @@
 # Requirements ;)
 
 * **install [Docker](https://www.docker.com/)**
-<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
 
 You must install Docker to run **Redis and PostgreSQL** container on it.
+
+* **Docker** <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
+
   * [install Docker on Linux](https://docs.docker.com/engine/install/)
   * [install Docker on Windows](https://docs.docker.com/desktop/windows/install/)
   * [install Docker on Mac](https://docs.docker.com/desktop/mac/install/)
 
 * **install [Postman](https://www.postman.com/)(recommended)  _or_ [Thunder Client](https://www.thunderclient.com)**  
-To test api, you need to use postman app **or** thunder client extension on vscode  
 
-  **Postman** <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
+To test API, you need to use postman app **or** thunder client extension on vscode  
+
+* **Postman** <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
 
   * [install postman on Linux](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux)
   * [install postman on Windows](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-windows)
   * [install postman on Mac](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-mac)
 
-<br/>
-
   > use this [Guide](https://learning.postman.com/docs/sending-requests/requests/) on how to send request via **postman**. 
 
-  Thunder Client(**note**: you won't need this, if you've installed Postman)  
+<br/>
+
+  **Thunder Client** <br/>
+  **note**: you won't need this, if you've installed Postman  
        
   Launch VS Code Extensions tab (Ctrl+Shift+X), search for _Thunder Client_ and install it.
 
@@ -115,8 +119,11 @@ To test api, you need to use postman app **or** thunder client extension on vsco
 # Testing APIs 💭
 
 The login senario would be like this:  
-1. Client's phone number would be sent by a post request to 'user/login/' endpoint. Then user will receive an sms containing OTP code.
-2. Client's phone number and delivered OTP code must be sent by a Post request to 'user/verify/' endpoint. If client provides the correct information, it's request would be Responsed by an access and refresh token for further usages(authentication).
+1. Client's phone number would be sent by a post request to 'user/login/' endpoint. <br/>
+Then user will receive an sms containing OTP code.
+2. Client's phone number and delivered OTP code must be sent by a Post request to 'user/verify/' endpoint. <br/>
+If client provides the correct information: <br/>
+it's request would be Responsed by an access and refresh token for further usages(authentication).
 
 
 # Login
