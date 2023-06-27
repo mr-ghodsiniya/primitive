@@ -1,6 +1,6 @@
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=34&duration=3000&color=ADBAC7&center=false&vCenter=true&repeat=true&width=700&lines=Primitive+👋)](https://git.io/typing-svg)
 
-* This is a personal project and I did not choose a suitable name for it but it will be **upgraded in the future**.
+* This is a personal project that will be **upgraded in the future** also I didn't choose a suitable name for it.
 * currently users can **Sign up/in** and do **CRUD** operations for their posts.
 
 
