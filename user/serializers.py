@@ -7,6 +7,10 @@ class UserLoginSerializer(serializers.Serializer):
     phone_number = serializers.CharField(max_length=13)
 
     def validate_phone_number(self, value):
+        """
+        Check that phone_number is an valid Iranian number.
+        """
+        
         if not (value.startswith('09') and value.isnumeric() and len(value)==11):
             raise ValidationError('Phone number is not valid')
         return value
@@ -17,11 +21,19 @@ class UserVeifySerializer(serializers.Serializer):
     otp = serializers.CharField(max_length=4)
 
     def validate_phone_number(self, value):
+        """
+        Check that phone_number is an valid Iranian number.
+        """
+        
         if not (value.startswith('09') and value.isnumeric() and len(value)==11):
             raise ValidationError('Phone number is not valid')
         return value
         
     def validate_otp(self, value):
+        """
+        Check that otp is match with otp_pattern.
+        """
+        
         if not (value.isnumeric() and len(value)==4):
             raise ValidationError("otp is not valid")
         return value
