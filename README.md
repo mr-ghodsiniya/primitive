@@ -74,7 +74,7 @@ You can test APIs inside of project with the help of Google and localhost.
    git clone git@github.com:mr-ghodsiniya/primitive.git
    ```  
 
-2. **rename .sample.env to .env and fill the variables**.  
+2. **in core folder, rename .sample.env to .env and fill the variables**.  
    Pay attention that in this project we're using [SMS.IR](https://sms.ir/) APIs to send OTP.  
    **Note**: You will need an API_KEY which is accessible in your dashboard.
    ```
