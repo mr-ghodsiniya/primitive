@@ -18,6 +18,8 @@
 
 * [Celery](https://docs.celeryq.dev/en/stable/) , Distributed Task Queue. ![Celery](https://img.shields.io/badge/celery-%230C7BDC.svg?style=for-the-badge&logo=celery&logoColor=white)
 
+* [Swagger](https://swagger.io/) , Test APIs inside of project. ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
+
 * [Redis](https://redis.io/docs/) , Cache Database and message broker. ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
 * [Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/) , Authentication Manager. ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20Web%20Tokens)
@@ -27,8 +29,7 @@
 
 # Requirements ;)
 
-* **install [Docker](https://www.docker.com/)**
-
+* **install [Docker](https://www.docker.com/)** <br/>
 You must install Docker to run **Redis and PostgreSQL** container on it.
 
 * **Docker** <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a>
@@ -37,27 +38,32 @@ You must install Docker to run **Redis and PostgreSQL** container on it.
   * [install Docker on Windows](https://docs.docker.com/desktop/windows/install/)
   * [install Docker on Mac](https://docs.docker.com/desktop/mac/install/)
 
-* **install [Postman](https://www.postman.com/)(recommended)  _or_ [Thunder Client](https://www.thunderclient.com)**  
-
-To test API, you need to use postman app **or** thunder client extension on VsCode.
+* **install [Postman](https://www.postman.com/)(recommended) or [Thunder Client](https://www.thunderclient.com) or [Swagger](https://swagger.io/)**  <br/>
+To test API, you need to use postman app <br/>
+**or** thunder client extension on VsCode **or** swagger.
 
 * **Postman** <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
 
   * [install postman on Linux](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux)
   * [install postman on Windows](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-windows)
   * [install postman on Mac](https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-mac)
+  > Use this [Guide](https://learning.postman.com/docs/sending-requests/requests/) on how to send request via **postman**. 
 <br/>
-
-  > use this [Guide](https://learning.postman.com/docs/sending-requests/requests/) on how to send request via **postman**. 
 
 * **Thunder Client** <br/>
-  **note**: you won't need this, if you've installed Postman.
+  **Note**: You won't need this, if you've installed Postman.
        
   * Launch VsCode Extensions tab (Ctrl+Shift+X), search for _Thunder Client_ and install it.
+  > Use this [Guide](https://developers.refinitiv.com/en/article-catalog/article/how-to-test-http-rest-api-easily-with-visual-studio-code---thund) on how to send request via **thunder client**.
 <br/>
 
-  > use this [Guide](https://developers.refinitiv.com/en/article-catalog/article/how-to-test-http-rest-api-easily-with-visual-studio-code---thund) on how to send request via **thunder client**.
-
+* **Swagger** <br/>
+You can test APIs inside of project with the help of Google and localhost.
+   ```
+   http://127.0.0.1:8000/swagger/
+   or
+   http://127.0.0.1:8000/redoc/
+   ```
 
 # ⏳️ Installation
 
@@ -68,7 +74,7 @@ To test API, you need to use postman app **or** thunder client extension on VsCo
 
 2. **rename .sample.env to .env and fill the variables**.  
    Pay attention that in this project we're using [SMS.IR](https://sms.ir/) APIs to send OTP.  
-   **note**: you will need an API_KEY which is accessible in your dashboard.
+   **Note**: You will need an API_KEY which is accessible in your dashboard.
    ```
    SECRET_KEY=Just fill in whatever you like
    API_KEY=API_KEY from sms.ir
@@ -162,7 +168,7 @@ and including access token in Headers like below:
 # key: Authorization
 # value: Bearer your-access-token-without-quotation-marks
 ```
-3 = The id of the post you want to edit
+3 = The id of the post you want to edit.
 
 
 # Delete
@@ -172,7 +178,7 @@ including access token in Headers like below:
 # key: Authorization
 # value: Bearer your-access-token-without-quotation-marks
 ```
-3 = The id of the post you want to delete
+3 = The id of the post you want to delete.
 
 
 # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=34&duration=3500&color=ADBAC7&center=false&vCenter=true&repeat=true&width=700&lines=✍️+Random+Dev+Quote:)](https://git.io/typing-svg)
