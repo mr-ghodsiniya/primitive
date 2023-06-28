@@ -104,11 +104,17 @@ You can test APIs inside of project with the help of Google and localhost.
    ```
 
 6. **run redis and postgresql container on docker**
-   ```
-   sudo docker run --name pri-rd -p 6381:6379 -d redis
-   sudo docker run --name pri-sql -p 5435:5432 -e POSTGRES_PASSWORD=123456 -d postgres
-   ```
-   
+  * on linux and mac
+    ```
+    sudo docker run --name pri-rd -p 6381:6379 -d redis
+    sudo docker run --name pri-sql -p 5435:5432 -e POSTGRES_PASSWORD=123456 -d postgres
+    ```
+  * on windows
+    ```
+    docker run --name pri-rd -p 6381:6379 -d redis
+    docker run --name pri-sql -p 5435:5432 -e POSTGRES_PASSWORD=123456 -d postgres
+    ```
+
 7. **makemigrations**
    ```
    python manage.py makemigrations user
